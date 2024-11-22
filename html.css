@@ -1,0 +1,116 @@
+/* Ensures the page fills at least the viewport height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Flexbox layout for the body */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  /* Pushes footer to bottom */
+}
+
+header {
+    background-color: #32a89b;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #32a89b;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select, button {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #32a89b;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #32a89b;
+}
+
+img {
+    width: 200px;
+    float: left;
+}
+
+.same {
+    float: left;
+}
+
+/* Sticky Footer */
+footer {
+    background-color: #32a89b;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    flex-shrink: 0; /* Ensures the footer stays at the bottom */
+}

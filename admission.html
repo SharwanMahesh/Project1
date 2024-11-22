@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="html.css">
+</head>
+<body>
+    <header>
+        <h1>Hospital Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="./1.html">Home</a></li>
+                <li><a href="./opd.html">OPD Queue</a></li>
+                <li><a href="./bed.html">Bed Availability</a></li>
+                <li><a href="./admission.html">Patient Admissions</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="patient-admissions">
+    <h2>Patient Admissions</h2>
+    <form action="/Admit" method="POST">
+        <label for="patient-name">Patient Name:</label>
+        <input type="text" id="patient-name" name="patient-name" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="department">Department:</label>
+        <select id="department" name="department">
+            <option value="general-medicine">General Medicine</option>
+            <option value="pediatrics">Pediatrics</option>
+            <option value="cardiology">Cardiology</option>
+        </select>
+
+        <label for="admission-date">Admission Date:</label>
+        <input type="date" id="admission-date" name="admission-date" required>
+
+        <button type="submit">Admit Patient</button>
+    </form>
+</section>
+<footer id="contact">
+    <h2>Contact Us</h2>
+    <p>For any queries, please contact us at <a href="mailto:contact@hospital.com">contact@hospital.com</a>.</p>
+</footer>
+</html>
